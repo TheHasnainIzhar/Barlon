@@ -1,0 +1,9 @@
+:root{
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --near-black: rgb(23, 23, 23);
+    --charcoal-gray: rgb(41, 41, 41);
+    --dark-gray: rgb(58, 58, 58);
+    --light-dark-grey: rgb(99, 99, 99);
+    --dull-white-color: rgb(141, 141, 141);
+}

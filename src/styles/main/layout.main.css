@@ -1,0 +1,82 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--charcoal-gary) transparent;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-button {
+  background-color: transparent;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--charcoal-gary);
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-decoration: none;
+  color: var(--white);
+  background: var(--near-black);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-width: 320px;
+}
+
+.main-layout{
+  margin: 0 auto;
+  width: auto;
+  max-width: 2560px;
+}
+
+.layout-elements{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+.navigation-bar{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.app-page-view{
+  width: 100%;
+  transition: all 1.5s ease;
+}
+.footer-layout{
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: var(--white);
+  }
+  .app-page-view {
+    background-color: white;
+    color: black;
+    transition: all 1.5s ease;
+  }
+}

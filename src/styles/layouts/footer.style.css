@@ -1,0 +1,309 @@
+:root{
+    --footer-comp-bg-color: rgb(41, 41, 41);
+    --footer-active-link-color: #ffffff;
+    --input-field-color: rgb(18, 18, 18); 
+    --pg-bg-color: #131313;
+    --footer-comp-border: #1d1d1d;
+    --foreground: rgb(255, 255, 255);
+    --footer-links: rgb(207, 207, 207);
+    --contact-info-color: rgb(255, 255, 255);
+    --footer-links-hover: rgb(19, 19, 19);
+    --footer-search-border: #3a3a3a;
+    --placeholder-color: #3a3a3a;
+}
+
+.footer-component{
+    width: 100%;
+    min-width: 0px;
+    height: 500px;
+    background-color: var(--footer-comp-bg-color);
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-body{
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 2500px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-social-box{
+    width: 30%;
+    border-right: solid 2px var(--footer-comp-border);
+}
+
+.footer-address-box-header{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    letter-spacing: 0.06rem;
+    font-family: 'Calton Elegance Sans';
+}
+
+.footer-contact-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; 
+}
+
+.footer-contact-info p{
+    font-size: 15px;
+    padding-left: 5px;
+    font-family: var(--montserrat);
+    font-style: normal;
+    letter-spacing: 0.06rem;
+}
+
+.footer-contact-info a{
+    text-decoration: none;
+    color: var(--contact-info-color);
+    padding-left: 5px;
+    transition: all 0.5s ease;
+    font-style: normal;
+    letter-spacing: 0.06rem;
+    font-family: var(--montserrat);
+
+}
+
+.footer-contact-info a:hover{
+    color: var(--footer-links-hover);
+}
+
+/* Footer Useful Links Box */
+.footer-useful-links{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    flex-direction: column;
+    border-right: solid 2px var(--footer-comp-border);
+}
+
+.footer-useful-links-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Calton Elegance Sans';
+    letter-spacing: 0.06rem;
+}
+
+.footer-useful-links-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-useful-links-container div{
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link-open-button{
+    display: none;
+    font-weight: 500;
+}
+
+.footer-useful-links div p{
+    color: var(--foreground);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer-useful-link-element{
+    text-decoration: none;
+    text-align: center;
+    color: var(--footer-links);
+    transition: all 0.2s ease;
+    font-family: var(--montserrat);
+    letter-spacing: 0.06rem;
+
+}
+
+.footer-useful-link-element:hover{
+    color: var(--footer-links-hover);
+}
+
+.footer-useful-link-element:active{
+    color: var(--footer-active-link-color);
+}
+
+/* News Letter Box */
+.news-box{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.news-letter-box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.subscribe-text{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--foreground);
+    text-align: center;
+    letter-spacing: 0.06rem;
+    font-family: 'Calton Elegance Sans';
+}
+
+.subscribe-email-box{
+    width: 100%;
+    max-width: 650px;
+    background-color: var(--input-field-color);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--footer-search-border);
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.subscribe-email-input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--foreground);
+    padding-left: 20px;
+    width: 90%;
+    height: 55%;
+}
+
+.subscribe-email-input::placeholder{
+    color: var(--dull-white-color);
+    font-family: var(--montserrat);
+    letter-spacing: 0.06rem;
+    font-size: 15px;
+    font-family: 'Calton Elegance Sans';
+}
+
+.footer-news-link{
+    color: var(--footer-links);
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all .5s ease;
+    font-family: var(--montserrat);
+    letter-spacing: 0.06rem;
+}
+
+.footer-news-link:hover{
+    color: var(--footer-links-hover);
+}
+
+.footer-news-link:active{
+    color: var(--footer-active-link-color);
+}
+
+/* Copyright Banner */
+.copyright-banner{
+    padding: 10px 20px;
+    background-color: var(--footer-comp-bg-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.copyright-banner p{
+    font-style: italic;
+}
+
+@media (max-width: 880px) {
+
+    .footer-component{
+        height: auto;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .footer-content > * {
+        border-right: none;
+        border-bottom: 2px solid var(--footer-comp-border);
+        width: 95%;
+        padding-bottom: 5px;
+    }
+
+    .footer-social-box{
+        width: 95%;
+    }
+
+    .footer-contact-box{
+        height: 0;
+        transform: scale(0, 0);
+    }
+
+    .footer-address-box-header{
+        justify-content: space-between;
+    }
+
+    .footer-useful-links{
+        width: 95%;   
+    }
+
+    .footer-useful-links-header{
+        justify-content: space-between;
+    }
+
+    .footer-useful-links-container{
+        height: 0;
+        transform: scale(0, 0);
+    }
+
+    .footer-link-open-button{
+        display: block;
+        pointer-events: all;
+        cursor: pointer;
+    }
+
+    .news-box{
+        margin-top: 15px;
+    }
+}
+
+/* Active Classes for Footer */
+
+.footer-useful-links-container-active{
+    height: unset;
+    transform: scale(1, 1);
+}
+
+.footer-social-box-container-active{
+    height: unset;
+    transform: scale(1, 1);
+}

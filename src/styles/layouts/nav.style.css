@@ -1,0 +1,342 @@
+
+/* Navbar */
+.nav-bg{
+    background-color: var(--charcoal-gray);
+    height: 55px;
+    width: 75%;
+    max-width: 1250px;
+    position: relative;
+    border-radius: 140px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--dark-gray);
+    text-decoration: none;
+}
+
+.nav-upper-bg{
+    width: 100%;
+}
+
+.nav-system-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: relative;
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.barlon-logo{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link-element{
+    margin: 0 20px;
+    scale: 1;
+    transition: all 1s ease;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Calton Elegance Sans';
+    letter-spacing: 0.06rem;
+}
+
+.nav-right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 20px;
+}
+
+.profile-logo-box{
+    border: solid 1px var(--dark-gray);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar Hover */
+.search-icon{
+    margin-top: 7px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link-element:hover{
+    color: var(--light-dark-grey);
+    transition: all 2s ease;
+    transition: hover 2s ease;
+}
+.nav-link-element:active{
+    color: var(--near-black);
+}
+.barlon-logo:hover{
+    cursor: pointer;
+}
+
+.profile-logo-box:hover{
+    cursor: pointer;
+}
+
+.barlon-logo-svg:hover{
+    fill: var(--near-black);
+}
+
+.search-bar-svg:hover{
+    fill: var(--near-black);
+}
+
+/* Menu Bar */
+.menu-icon{
+    font-size: 25px;
+    font-weight: 500;
+    display: none;
+    width: 22px;
+}
+
+.menu-icon:hover{
+    color: var(--near-black);
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+.black-space{
+    background-color: var(--near-black);
+    color: var(--pg-bg-color);
+    width: 100%;
+    height: 20px;
+    position: fixed;
+}
+.menu-links{
+    display: flex;
+    background-color: var(--charcoal-gray);
+    color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    border-radius: 10%;
+    border-end-start-radius: 10%;
+    border-end-end-radius: 10%;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all 1s ease;
+    font-family: var(--montserrat);
+}
+
+.menu-appear-func{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/*Animation Under Work */
+@keyframes radius-transition{
+    0% {
+        border-radius: 2px;
+    }
+    50% {
+        border-radius: 6px;
+    }
+    80% {
+        border-radius: 14px;
+    }
+    100% {
+        border-radius: 14px;
+    }
+}
+
+.menu-link-select{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    height: 20px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    width: 90%;
+    transition: all 1s ease;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu-link-select:hover{
+    background-color: var(--near-black);
+}
+
+.menu-link-appear{
+    opacity: 1;
+    transform: scaleY(1);
+}
+/* Media Queries */
+@media (max-width: 674px){
+    .nav-bg{
+        width: 95%
+    }
+}
+
+@media (max-width: 815px) {
+    .nav-bg{
+        width: 90%
+    }
+}
+
+@media (min-width: 910px) {
+    .nav-bg{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .nav-bg{
+        width: 55%;
+    }
+}
+
+/* Media Query for Very Small Devices */
+@media (max-width:530px) {
+    .nav-link-element{
+        scale: 0;
+        display: none;    
+    }
+    .nav-items{
+        justify-content: space-between;    
+    }
+    .barlon-logo{
+        margin-left: 5%;
+    }
+    .nav-lhs{
+        margin-right: 10%;
+    }
+    .profile-logo-box{
+        display: none;
+        scale: 0;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        margin-right: 8%;
+        color: var(--white);
+    }
+}
+
+/* Media Queries for Height */
+@media (max-height:700px) {
+    .nav-bg{
+        margin-top: .5rem;
+    }
+}
+
+
+/* Search Input */
+.search-input{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 50px;
+    transform: scaleX(0);
+    height: 55px;
+    width: 0;
+    transform-origin: top left;
+    background-color: var(--near-black);
+    border: 1px solid var(--dark-gray);
+    transition: all 1s ease;
+    opacity: 0.4;
+    z-index: 5;
+}
+
+.search-input-appear{
+    border-radius: 50px;
+    width: 100%;
+    opacity: 1;
+    transform: scaleX(1);
+    z-index: 10;
+}
+
+.search-input-field{
+    position: absolute;
+    color: var(--white);
+    width: 90%;
+    height: 28.6px;
+    opacity: 0.3;
+    border: none;
+    outline: none;
+    background-color: var(--near-black);
+    color: var(--white);
+    scale: 0.5;
+    transition: all 1.5s ease;
+    font-family: sans-serif;
+    border-radius: 50px;
+}
+.search-input-field-active{
+    opacity: 1;
+    scale: 1;
+}
+
+.search-input-field::placeholder{
+    font-family: 'Calton Elegance Sans';
+    letter-spacing: 0.06rem;
+    font-size: 14px;
+    color: var(--dull-white-color);
+}
+
+.search-input-field:active{
+    outline: none;
+    border: none;
+}
+
+.search-cancle-btn{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Calton Elegance Sans';
+    pointer-events: none;
+    cursor: pointer;
+    margin-right: 0;
+    transition: all 1.4s ease;
+    opacity: 0;
+    z-index: 15;
+    color: var(--dull-white-color);
+}
+
+.enable-search-btn{
+    margin-right: 10%;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.disable-button{
+    pointer-events: none;
+}
