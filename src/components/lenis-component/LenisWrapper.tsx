@@ -1,5 +1,8 @@
 "use client"
 
+// Under Development Functionality
+// Not in Use
+
 import { ReactNode, useEffect } from 'react'
 import Lenis from '@studio-freight/lenis'
 
