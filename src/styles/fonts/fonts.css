@@ -6,5 +6,6 @@
 
 @font-face {
     font-family: 'Calton Elegance Sans';
-    src: url('/public/fonts/Calton\ Elegance\ Sans-Regular.otf') format('woff2');
-}
+    src: url('/fonts/Calton Elegance Sans-Italic.otf') format('wof2');
+    font-style: normal;
+  }

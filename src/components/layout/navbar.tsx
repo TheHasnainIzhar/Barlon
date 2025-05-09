@@ -10,6 +10,7 @@ import "../../styles/layouts/nav.style.css";
 import "../../styles/color-plates/color-plate.css"
 import Image from "next/image";
 import SearchIcon from "../ui/searchicon";
+import TransitionLink from "@/utils/TransitionLink";
 
 export default function Navbar(){
     const [linksCount, setLinksCount] = useState<number>(0);
@@ -109,11 +110,11 @@ export default function Navbar(){
     return(
         <nav className="nav-bg" >
             <div className="menu-links" ref={menuBar}>
-                <Link className="menu-link-select" onClick={navClickToggle} href={"/"}>Home</Link>
-                <Link className="menu-link-select" onClick={navClickToggle} href={"/shop"}>Shop</Link>
-                <Link className="menu-link-select" onClick={navClickToggle} href={"/about"}>About</Link>
-                <Link className="menu-link-select" onClick={navClickToggle} href={"/contact"}>Contact</Link>
-                <Link className="menu-link-select" onClick={navClickToggle} href={"/Setting"}>Profile</Link>
+                <TransitionLink className="menu-link-select" onClick={navClickToggle} href={"/"}>Home</TransitionLink>
+                <TransitionLink className="menu-link-select" onClick={navClickToggle} href={"/shop"}>Shop</TransitionLink>
+                <TransitionLink className="menu-link-select" onClick={navClickToggle} href={"/about"}>About</TransitionLink>
+                <TransitionLink className="menu-link-select" onClick={navClickToggle} href={"/contact"}>Contact</TransitionLink>
+                <TransitionLink className="menu-link-select" onClick={navClickToggle} href={"/Setting"}>Profile</TransitionLink>
             </div>
             <div className='search-input' ref={searchInput}>
                 <input min={1} className='search-input-field' ref={searchInputField} placeholder='Search Here...'/>
@@ -124,10 +125,10 @@ export default function Navbar(){
                     <BarlonLogo className="barlon-logo-svg" />
                 </Link>
                 <div className="nav-links">
-                    <Link className="nav-link-element" href={"/"}>Home</Link>
-                    <Link className="nav-link-element" href={"/shop"}>Shop</Link>
-                    <Link className="nav-link-element" href={"/about"}>About</Link>
-                    <Link className="nav-link-element" href={"/contact"}>Contact</Link>
+                    <TransitionLink className="nav-link-element" href={"/"}>Home</TransitionLink>
+                    <TransitionLink className="nav-link-element" href={"/shop"}>Shop</TransitionLink>
+                    <TransitionLink className="nav-link-element" href={"/about"}>About</TransitionLink>
+                    <TransitionLink className="nav-link-element" href={"/contact"}>Contact</TransitionLink>
                 </div>
                 <div className="nav-right-side">
                     <div className="menu-icon" title="Menu" ref={menuButton} onClick={handleMenuRequest}>

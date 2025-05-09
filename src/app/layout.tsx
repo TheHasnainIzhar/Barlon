@@ -4,6 +4,7 @@ import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/footer";
 import "../styles/main/layout.main.css"
 import "../styles/color-plates/color-plate.css"
+import ReactLenis from "lenis/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,10 +29,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} app-layout`}>
-        <main className="main-layout">
+        <main className="main-layout" >
+          <ReactLenis root>
           <section className="layout-elements">
             <nav className="navigation-bar">
               <Navbar  />
@@ -43,6 +46,7 @@ export default function RootLayout({
               <Footer />
             </footer>
           </section>
+          </ReactLenis>
         </main>
       </body>
     </html>

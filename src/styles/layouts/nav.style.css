@@ -54,7 +54,7 @@
 .nav-link-element{
     margin: 0 20px;
     scale: 1;
-    transition: all 1s ease;
+    transition: all .5s ease;
     text-decoration: none;
     color: var(--white);
     font-family: 'Calton Elegance Sans';
@@ -87,8 +87,6 @@
 
 .nav-link-element:hover{
     color: var(--light-dark-grey);
-    transition: all 2s ease;
-    transition: hover 2s ease;
 }
 .nav-link-element:active{
     color: var(--near-black);
